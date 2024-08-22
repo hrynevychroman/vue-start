@@ -11,8 +11,11 @@
   <!-- default option, no dependency badges. -->
 </p>
 
-<br>
+<br><!-- IMPORTANT -->
+##  Important ‼️
+Delete `/.github/workflows/auto-sync.yml` file, it is used to sync this repo with organization one.
 
+<br><!-- TABLE OF CONTENTS -->
 #####  Table of Contents
 
 - [ Overview](#-overview)
