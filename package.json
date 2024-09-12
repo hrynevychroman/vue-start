@@ -92,6 +92,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm commitlint $1",
-    "pre-commit": "turbo check-types"
+    "pre-commit": "pnpm check-types"
   }
 }
