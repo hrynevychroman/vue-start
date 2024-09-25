@@ -14,7 +14,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "check-types": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit",
     "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
     "commitlint": "commitlint --edit",
     "prepare": "pnpm simple-git-hooks",
@@ -92,6 +92,6 @@
   },
   "simple-git-hooks": {
     "commit-msg": "pnpm commitlint $1",
-    "pre-commit": "pnpm check-types"
+    "pre-commit": "pnpm typecheck"
   }
 }
