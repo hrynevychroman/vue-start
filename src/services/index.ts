@@ -1,7 +1,8 @@
+import type { FetchResponse } from 'ofetch'
+import { router } from '@/plugins/1-router'
+import { useAuthStore } from '@/store'
 import { ofetch } from 'ofetch'
 import { refreshTokenAPI } from './auth'
-import { useAuthStore } from '@/store'
-import { router } from '@/plugins/1-router'
 
 export const apiFetch = ofetch.create({
   baseURL: import.meta.env.VITE_API_URL,
@@ -79,7 +80,7 @@ export const apiFetch = ofetch.create({
           onResponse(ctx) {
             Object.assign(context, ctx)
           },
-        })
+        }) as FetchResponse<any>
       }
       catch (error) {
         // Logout
