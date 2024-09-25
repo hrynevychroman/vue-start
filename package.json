@@ -18,7 +18,8 @@
     "clean": "rm -rf node_modules && pnpm -r exec rm -rf node_modules",
     "commitlint": "commitlint --edit",
     "prepare": "pnpm simple-git-hooks",
-    "release": "bumpp"
+    "release": "bumpp",
+    "changelog": "changelogen --output CHANGELOG.md"
   },
   "dependencies": {
     "@iconify/vue": "^4.1.2",
@@ -66,6 +67,7 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "autoprefixer": "^10.4.20",
     "bumpp": "^9.5.2",
+    "changelogen": "^0.5.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "defu": "^6.1.4",
