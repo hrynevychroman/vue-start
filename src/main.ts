@@ -1,9 +1,9 @@
-import { createApp } from 'vue'
+import { zodInit } from '@/utils'
 import { registerPlugins } from '@core/utils/plugins'
-import { getI18n } from './plugins/3-i18n'
+import { createApp } from 'vue'
 import App from './App.vue'
 
-import { zodInit } from '@/utils'
+import { getI18n } from './plugins/3-i18n'
 import '@/icons/setup'
 import '@/assets/index.css'
 

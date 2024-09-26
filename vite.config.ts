@@ -1,14 +1,14 @@
 import { fileURLToPath } from 'node:url'
-import { defineConfig } from 'vite'
-import VueRouter from 'unplugin-vue-router/vite'
-import { VueRouterAutoImports, getPascalCaseRouteName } from 'unplugin-vue-router'
-import VueDevTools from 'vite-plugin-vue-devtools'
+import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
+import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
-import Layouts from 'vite-plugin-vue-layouts'
-import vue from '@vitejs/plugin-vue'
+import { getPascalCaseRouteName, VueRouterAutoImports } from 'unplugin-vue-router'
+import VueRouter from 'unplugin-vue-router/vite'
+import { defineConfig } from 'vite'
 import checker from 'vite-plugin-checker'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({

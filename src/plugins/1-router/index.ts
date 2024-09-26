@@ -1,7 +1,7 @@
 import type { App } from 'vue'
 
-import { setupLayouts } from 'virtual:generated-layouts'
 import type { RouteRecordRaw } from 'vue-router/auto'
+import { setupLayouts } from 'virtual:generated-layouts'
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { routes } from 'vue-router/auto-routes'
 import { setupGuards } from './guards'

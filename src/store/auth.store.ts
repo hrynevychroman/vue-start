@@ -1,5 +1,5 @@
-import { omit } from 'radash'
 import type { Auth, User } from '@/types'
+import { omit } from 'radash'
 
 export const useAuthStore = defineStore('auth-store', () => {
   const user = ref<User | null>(null)

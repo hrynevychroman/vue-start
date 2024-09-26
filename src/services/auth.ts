@@ -1,6 +1,6 @@
-import { apiFetch } from '.'
-import type { Auth, User } from '@/types'
 import type { RegisterSchema } from '@/schemas'
+import type { Auth, User } from '@/types'
+import { apiFetch } from '.'
 
 export async function sendCodeAPI({ key }: {
   key: string

@@ -1,7 +1,7 @@
 import i18next from 'i18next'
+import { watch } from 'vue'
 import { z } from 'zod'
 import { makeZodI18nMap } from 'zod-i18n-map'
-import { watch } from 'vue'
 
 // Import your language translation files
 import translationEn from 'zod-i18n-map/locales/en/zod.json'

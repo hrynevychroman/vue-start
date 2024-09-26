@@ -1,7 +1,7 @@
-import type { FetchError } from 'ofetch'
-import { toast } from 'vue-sonner'
-import type { Component } from 'vue'
 import type { ErrorResponse } from '@/types'
+import type { FetchError } from 'ofetch'
+import type { Component } from 'vue'
+import { toast } from 'vue-sonner'
 
 interface PromiseData<ToastData = any> {
   loading?: string | Component
